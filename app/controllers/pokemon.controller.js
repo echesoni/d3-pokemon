@@ -1,11 +1,13 @@
 const Pokemon = require('../models/pokemon.model.js');
 
+console.log(Pokemon);
+
 // Retrieve and return all pokemon from the database
 exports.findAll = (req, res) => {
   Pokemon.find()
-  .then(pokemon => {
+  .then(pokemons => {
     console.log("Getting pokemon...");
-    res.json(pokemon);
+    res.json(pokemons);
   }).catch(err => {
     res.status(500).send({
       message: err.message || "Some error occured while trying to catch all the pokemon..."
