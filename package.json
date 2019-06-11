@@ -1,0 +1,19 @@
+{
+  "name": "d3_pokemonv1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "convert-csv-to-json": "0.0.14",
+    "csvtojson": "^2.0.8",
+    "express": "^4.17.1",
+    "mongoose": "^5.5.14",
+    "node-mongo-seeds": "^3.1.0"
+  }
+}
