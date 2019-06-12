@@ -1,9 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const fetch = require("node-fetch");
 const port = 3000;
 
 // create express app
 const app = express();
+
+// serve static files in public
+app.use(express.static('public'));
+
+fetch('http://localhost:8080/pokemon.json#', { mode: 'no-cors' });
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -18,8 +24,9 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 // Connect to the database
-mongoose.connect(dbConfig.url, {
-  useNewUrlParser: true
+mongoose.connect(dbConfig.url, function(err, db) {
+  useNewUrlParser: true,
+  console.log("Here it is: " + db.collection("pokemons").findOne({}));
 }).then(() => {
   console.log("Successfully connected to the database");
 }).catch(err => {
@@ -31,7 +38,9 @@ mongoose.connect(dbConfig.url, {
 
 // define route
 app.get('/', (req, res) => {
-  res.json({"message": "route is working!"});
+  // res.json({"message": "route is working!"});
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.sendFile('views/index.html' , { root : __dirname});
 });
 
 // api routes

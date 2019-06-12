@@ -6,7 +6,7 @@ const fs = require('fs');
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017/";
 
-const pathToCsv = path.join(__dirname, 'Pokemon.csv');
+const pathToCsv = path.join(__dirname, 'pokemon.csv');
 const pokemonList = [];
 
 // console.log(pathToCsv);

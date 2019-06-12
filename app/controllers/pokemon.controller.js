@@ -1,6 +1,6 @@
 const Pokemon = require('../models/pokemon.model.js');
 
-console.log(Pokemon);
+// console.log(Pokemon);
 
 exports.create = (req, res) => {
   // Validate request
