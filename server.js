@@ -9,6 +9,7 @@ const app = express();
 // serve static files in public
 app.use(express.static('public'));
 
+// Allow Cross Origin Access
 fetch('http://localhost:8080/pokemon.json#', { mode: 'no-cors' });
 
 // parse requests of content-type - application/x-www-form-urlencoded
@@ -34,11 +35,9 @@ mongoose.connect(dbConfig.url, function(err, db) {
   process.exit();
 });
 
-// console.log(db.Pokemon);
-
 // define route
 app.get('/', (req, res) => {
-  // res.json({"message": "route is working!"});
+  // Allow Cross Origin Access
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.sendFile('views/index.html' , { root : __dirname});
 });
