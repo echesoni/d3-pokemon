@@ -32,19 +32,3 @@ MongoClient.connect(url, (err, db) => {
     db.close();
   });
 });
-
-// pokemondb.remove({}, (err, pokemons) => {
-//   console.log("starting to remove...");
-//   if(err) {
-//     console.log('Error occurred in remove', err);
-//   } else {
-//     console.log('removed all pokemon');
-//
-//     // create new records based on the array pokemon_list
-//     pokemondb.create(pokemon_list, function(err, pokemons){
-//       if (err) { return console.log('err', err); }
-//       console.log("created", pokemons.length, "pokemon");
-//       process.exit();
-//     });
-//   }
-// });
