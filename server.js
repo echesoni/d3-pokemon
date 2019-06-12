@@ -27,6 +27,8 @@ mongoose.connect(dbConfig.url, {
   process.exit();
 });
 
+// console.log(db.Pokemon);
+
 // define route
 app.get('/', (req, res) => {
   res.json({"message": "route is working!"});
