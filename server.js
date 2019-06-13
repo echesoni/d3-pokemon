@@ -38,11 +38,11 @@ app.get('/', (req, res) => {
   res.sendFile('views/index.html' , { root : __dirname});
 });
 
-// app.get('/test', (req, res) => {
-//   res.sendFile('views/test.html' , { root : __dirname});
-// });
+// api routes
+// require('./app/routes/pokemon.routes.js')(app);
 
 // Api workaround for build/testing
+// Move these to routes once testing is finished
 app.get('/api/pokemon', (req, res) => {
   fs.readFile('data/pokemon.json', (err, json) => {
     let obj = JSON.parse(json);
@@ -119,9 +119,6 @@ app.get('/api/flyingPokemon', (req, res) => {
     res.json(obj);
   });
 });
-
-// api routes
-// require('./app/routes/pokemon.routes.js')(app);
 
 // listen for requests
 app.listen(port, () => {

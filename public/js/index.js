@@ -39,7 +39,7 @@ var setChart = function(dataset){
       .data(bubble(nodes).descendants())
       .enter()
       .filter(function(d){
-          return  !d.children
+          return !d.children
       })
       .append("g")
       .attr("class", "node")

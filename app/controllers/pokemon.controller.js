@@ -10,7 +10,7 @@ exports.create = (req, res) => {
     });
   }
 
-  // Create Note
+  // Create pokemon
   const pokemon = new Pokemon({
     PokemonNumber: req.body.PokemonNumber,
     Name: req.body.Name,
@@ -27,7 +27,7 @@ exports.create = (req, res) => {
     Legendary: req.body.Legendary
   });
 
-  // Save Note in the database
+  // Save Pokemon in the database
   pokemon.save()
     .then(data => {
       res.send(data);
