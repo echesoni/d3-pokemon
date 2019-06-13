@@ -1,0 +1,6 @@
+[
+  { "_id" : {"ObjectId":"5d00503e167e993b40427c75"}, "PokemonNumber" : "641", "Name" : "TornadusIncarnate Forme", "Type1" : "Flying", "Type2" : "", "Total" : "580", "HP" : "79", "Attack" : "115", "Defense" : "70", "SpecialAttack" : "125", "SpecialDefense" : "80", "Speed" : "111", "Generation" : "5", "Legendary" : "True" },
+  { "_id" : {"ObjectId":"5d00503e167e993b40427c76"}, "PokemonNumber" : "641", "Name" : "TornadusTherian Forme", "Type1" : "Flying", "Type2" : "", "Total" : "580", "HP" : "79", "Attack" : "100", "Defense" : "80", "SpecialAttack" : "110", "SpecialDefense" : "90", "Speed" : "121", "Generation" : "5", "Legendary" : "True" },
+  { "_id" : {"ObjectId":"5d00503e167e993b40427ccd"}, "PokemonNumber" : "714", "Name" : "Noibat", "Type1" : "Flying", "Type2" : "Dragon", "Total" : "245", "HP" : "40", "Attack" : "30", "Defense" : "35", "SpecialAttack" : "45", "SpecialDefense" : "40", "Speed" : "55", "Generation" : "6", "Legendary" : "False" },
+  { "_id" : {"ObjectId":"5d00503e167e993b40427cce"}, "PokemonNumber" : "715", "Name" : "Noivern", "Type1" : "Flying", "Type2" : "Dragon", "Total" : "535", "HP" : "85", "Attack" : "70", "Defense" : "80", "SpecialAttack" : "97", "SpecialDefense" : "80", "Speed" : "123", "Generation" : "6", "Legendary" : "False" }
+]

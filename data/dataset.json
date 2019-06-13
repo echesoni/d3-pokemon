@@ -1,0 +1,23 @@
+ [
+   {"Name":"Bulbasaur","SpecialAttack":65},
+   {"Name":"Ivysaur","SpecialAttack":80},
+   {"Name":"Venusaur","SpecialAttack":100},
+   {"Name":"Charmander","SpecialAttack":60},
+   {"Name":"Charmeleon","SpecialAttack":80},
+   {"Name":"Charizard","SpecialAttack":109},
+   {"Name":"Squirtle","SpecialAttack":50},
+   {"Name":"Wartortle","SpecialAttack":65},
+   {"Name":"Blastoise","SpecialAttack":85},
+   {"Name":"Caterpie","SpecialAttack":20},
+   {"Name":"Metapod","SpecialAttack":25},
+   {"Name":"Butterfree","SpecialAttack":90},
+   {"Name":"Weedle","SpecialAttack":20},
+   {"Name":"Kakuna","SpecialAttack":25},
+   {"Name":"Beedrill","SpecialAttack":45},
+   {"Name":"Pidgey","SpecialAttack":35},
+   {"Name":"Pidgeotto","SpecialAttack":50},
+   {"Name":"Pidgeot","SpecialAttack":70},
+   {"Name":"Rattata","SpecialAttack":25},
+   {"Name":"Raticate","SpecialAttack":81},
+   {"Name":"Sperrow","SpecialAttack":31}
+]

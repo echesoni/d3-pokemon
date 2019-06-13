@@ -3,20 +3,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <title>Pokemon Stats with D3</title>
-
+  <title>PokeStat</title>
+  <!-- GOOGLE FONTS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <!-- VENDOR SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+  <h1>PokeStat</h1>
+  <div class="flex-container">
+    <div class="btn-box">
+      <a id="filter1" class="waves-effect waves-light btn">Water</a>
+      <a id="filter2" class="waves-effect waves-light btn">Fire</a>
+      <a id="filter3" class="waves-effect waves-light btn">Grass</a>
+      <a id="filter4" class="waves-effect waves-light btn">Poison</a>
+      <a id="filter5" class="waves-effect waves-light btn">Psychic</a>
+      <a id="filter6" class="waves-effect waves-light btn">Ice</a>
+      <a id="filter7" class="waves-effect waves-light btn">Electric</a>
+      <a id="filter8" class="waves-effect waves-light btn">Flying</a>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div id="bubble-box"></div>
+  </div>
   <!-- APPLICATION SCRIPTS -->
   <script src="/js/index.js"></script>
-
-</head>
-<body>
-  <h1>Welcome to PokeStats</h1>
-  <div id="pokemonList"></div>
 </body>
 </html>
