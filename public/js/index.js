@@ -1,10 +1,10 @@
-var pokemonData = [];
-var data = {};
-
 var diameter = 600;
 var color = d3.scaleOrdinal(d3.schemeYlGnBu[7]);
 
 function handleSuccess(json) {
+  var pokemonData = [];
+  var data = {};
+  
   allPokemon = json;
   allPokemon.forEach(function(pokemon){
     pokemonData.push(pokemon);
@@ -35,17 +35,19 @@ var setChart = function(dataset){
   var nodes = d3.hierarchy(dataset)
       .sum(function(d) { return d.SpecialAttack; });
 
-  var node = svg.selectAll(".node")
-      .data(bubble(nodes).descendants())
-      .enter()
-      .filter(function(d){
+  var nodeItems = svg.selectAll(".node")
+      .data(bubble(nodes).descendants().filter(function(d){
           return !d.children
-      })
+      }));
+  var node = nodeItems.enter()
       .append("g")
       .attr("class", "node")
       .attr("transform", function(d) {
           return "translate(" + d.x + "," + d.y + ")";
       });
+
+  nodeItems.exit()
+      .remove();
 
   node.append("title")
       .text(function(d) {
