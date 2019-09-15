@@ -35,7 +35,7 @@ const mongoose = require('mongoose');
 
 // define route
 app.get('/', (req, res) => {
-  res.sendFile('views/index.html' , { root : __dirname});
+  res.sendFile('views/index.html' , {root : __dirname});
 });
 
 // api routes
